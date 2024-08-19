@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h2>Prueba de Formulario</h2>
+    <form>
+        <!--Dentro de la etiqueta <form></form> se utilizan los distintos inputs, y para algunos se puede usar un placeholder
+        que seria como una guia o texto de lo que hay que ingresar. Ej : Ingrese su nombre...-->
+        <input type="text" name="username" placeholder="Ingrese su usuario">
+        <!--Entrada tipo correo que valida que sea abc@def.com-->
+        <input type="email" name="Email" placeholder="Ingrese su correo">
+        <!--Entrada tipo Date-->
+        <input type="date" name="Fecha Inicio">
+        <input type="date" name="Fecha Fin">
+        <!--Entrada tipo radio-button-->
+        <input type="radio" name="username">
+        <!--Selector de mayor y menor topeado con 18 y 99 para la edad-->
+        <input type="number" name="Edad" min="18" max="99">
+        <!--Input para envio de datos por defecto segun el idioma toma Send o Enviar-->
+        <input type="submit" name="Enviar Datos">
+        <!--Para realizar validaciones a los input de texto podemos usar required, por ejemplo el tamaño de caracteres que se espera-->
+        <input type="text" required minlength="3">
+
+    </form>
+</body>
+</html>
