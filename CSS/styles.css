@@ -1,13 +1,17 @@
 /*Aqui vamos a utilizar las etiquetas en este caso P y Ol van a tener estos cambios
 pero si queremos especificar a que elemento de un HTML queremos hacerle algun cambio entonces
 */
+h1{
+    text-align: center;
+}
 p{
     color:red; /*color de las letras*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:13px; /*tamanio de la letra*/
     font-weight: 800; /*Para que sea mas oscuro*/
-    text-align: end; /*Alineacion del texto*/
-    text-decoration: overline; /*Estilos como subrayado arriba,abajo u otros*/
+    text-align: center; /*Alineacion del texto*/
+    text-decoration: none; /*Estilos como subrayado arriba,abajo u otros line-through, underline, overline*/
+    line-height: 1.5;/*Interlineado o espacio entre lineas*/
 }
 ol{
     color:blueviolet
@@ -24,5 +28,14 @@ solamente que este puede ser llamado una sola vez de esa forma en cambio a vario
 se les puede utilizar el class*/
 #c3{
     color:black
+}
+/*Declaramos en el html <span> a una parte del lorem para que vean que se puede utilizar SPAN como una etiqueta
+para poder darle propiedades mediante CSS*/
+span{
+    color:brown; /*Propiedad para darle color.*/
+    text-decoration: line-through; /*Decoramos para que tenga rayas en medio, se puede usar none*/
+    text-overflow: initial;
+    text-transform: uppercase; /*Hacemos que sea todo en mayusculas*/
+    
 }
 
