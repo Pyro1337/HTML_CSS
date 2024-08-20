@@ -1,0 +1,28 @@
+/*Aqui vamos a utilizar las etiquetas en este caso P y Ol van a tener estos cambios
+pero si queremos especificar a que elemento de un HTML queremos hacerle algun cambio entonces
+*/
+p{
+    color:red; /*color de las letras*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:13px; /*tamanio de la letra*/
+    font-weight: 800; /*Para que sea mas oscuro*/
+    text-align: end; /*Alineacion del texto*/
+    text-decoration: overline; /*Estilos como subrayado arriba,abajo u otros*/
+}
+ol{
+    color:blueviolet
+}
+/*En este ejemplo solo a uno de los elementos de la lista le cambio los colores.
+utilizando class ="Nombre", y  dentro de css .Nombre{} para darle propeiades
+mas de un elemento puede tomar las propiedades definidas en CLASS*/
+.c1{
+    color:yellowgreen
+}
+
+/*Tambien se puede darle propiedad mediante ID y este se edita desde css con #nombre
+solamente que este puede ser llamado una sola vez de esa forma en cambio a varios elementos
+se les puede utilizar el class*/
+#c3{
+    color:black
+}
+
