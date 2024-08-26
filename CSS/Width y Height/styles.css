@@ -1,12 +1,85 @@
-div{
-    background: red;
-    width: 120px;
-    height: 64px;
+/* Estilos generales del cuerpo de la página */
+body {
+    background-color: #f0f2f5; /* Color de fondo similar al de Facebook */
+    font-family: Arial, sans-serif; /* Fuente base para el texto */
+    display: flex; /* Usa Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenedor */
+    align-items: center; /* Centra verticalmente el contenedor */
+    height: 100vh; /* Altura completa de la ventana del navegador */
+    margin: 0; /* Elimina el margen por defecto */
 }
+
+/* Estilos del contenedor del formulario */
+.container {
+    background: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 50px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor del contenedor */
+    padding: 30px; /* Espacio interno alrededor del contenido */
+    width: 360px; /* Ancho fijo del formulario */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin-left: 10%;
+    margin: right 100px;
+}
+
+/* Estilo del título */
+h1 {
+    color: #1877f2; /* Color azul similar al de Facebook */
+    font-size: 24px; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo de los campos de entrada */
+.mailpw {
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 10px; /* Espacio interior dentro del campo */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    border: 1px solid #ddd; /* Borde gris claro alrededor del campo */
+    border-radius: 4px; /* Bordes redondeados del campo */
+    margin-bottom: 10px; /* Espacio debajo de cada campo */
+}
+
+/* Estilo del botón de enviar */
+.InicioSesion {
+    background-color: #1877f2; /* Color de fondo azul para el botón */
+    color: #ffffff; /* Color del texto del botón (blanco) */
+    border: none; /* Sin borde alrededor del botón */
+    padding: 10px; /* Espacio interior dentro del botón */
+    font-size: 16px; /* Tamaño de fuente del texto del botón */
+    border-radius: 4px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    width: 100%; /* Ancho completo del contenedor */
+}
+
+/* Estilo del botón al pasar el ratón sobre él */
+.InicioSesion:hover {
+    background-color: #165eab; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+/* Estilo del enlace "Olvidaste tu contraseña?" */
+.olvidaste {
+    display: block; /* Muestra el enlace como un bloque para que ocupe toda la línea */
+    margin-top: 10px; /* Espacio arriba del enlace */
+    color: #1877f2; /* Color del enlace (azul similar al de Facebook) */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    font-size: 14px; /* Tamaño de fuente del enlace */
+}
+
+/* Estilo del enlace al pasar el ratón sobre la seccion de Olvidaste tu contrasenia */
+.olvidaste:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón para indicar clic */
+}
+
+
 h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: blue;
-    background-color: aquamarine;
-    width: 120px;
-    height: 64px;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -30px;
+    margin-right: -120px;
+}
+.textoAyuda{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -30px;
+    margin-right: -120px;
+        
 }
