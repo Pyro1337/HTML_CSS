@@ -1,0 +1,99 @@
+body {
+    background-color: hwb(240 3% 69%);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+h2:hover{
+    color:red;
+    cursor:pointer;
+}
+
+.box {
+    width: 320px;
+    height: 120px;
+    background-color: rgb(36, 58, 155); 
+    margin: 20px auto; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    text-align: center; 
+    height: 620px;
+}
+
+.eth{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 35%;
+    height: 5%;
+    top: 60%;
+    left: 32%;
+    font-size: 18px;
+    position: inherit;
+    color: hsl(178, 100%, 50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.dl{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 35%;
+    height: 5%;
+    top: -4.8%;
+    left: 65%;
+    margin-right: 90%;
+    position: relative;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.by{
+    margin-top: 10%;
+}
+.avatar{
+    width: 12%;
+    margin-top: -10%;
+    position: relative;
+    left: -40%;
+}
+.creator{
+    width: 60%;
+    height: 5%;
+    position: relative;
+    left: 20%;
+    margin-top: -10%;
+    border-color: black;
+    border-style: solid;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.creator:hover{
+    color:rgb(218, 143, 30);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0,5);
+    cursor:pointer;
+}
+
+.equi{
+    width: 320px;
+    height: 190;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.underline{
+    margin-top: 25px;
+    height: 3px;
+    background-color: rgb(49, 121, 189);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
