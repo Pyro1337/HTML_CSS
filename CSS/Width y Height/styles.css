@@ -7,47 +7,58 @@ body {
     align-items: center; /* Centra verticalmente el contenedor */
     height: 100vh; /* Altura completa de la ventana del navegador */
     margin: 0; /* Elimina el margen por defecto */
+    padding: 20px; /* Añade un pequeño padding para móviles */
+    box-sizing: border-box; /* Asegura que el padding se incluya dentro de la altura y el ancho */
 }
 
 /* Estilos del contenedor del formulario */
 .container {
     background: #ffffff; /* Fondo blanco para el formulario */
-    border-radius: 50px; /* Bordes redondeados */
+    border-radius: 15px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor del contenedor */
-    padding: 30px; /* Espacio interno alrededor del contenido */
-    width: 360px; /* Ancho fijo del formulario */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    width: 396px; /* Ancho completo para adaptarse al tamaño de pantalla */
+    height: 314px;
+    position: relative;
+    max-width: 360px; /* Ancho máximo del formulario */
     text-align: center; /* Centra el texto dentro del contenedor */
-    margin-left: 10%;
-    margin: right 100px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 
-/* Estilo del título */
-h1 {
-    color: #1877f2; /* Color azul similar al de Facebook */
-    font-size: 24px; /* Tamaño de fuente del título */
-    margin-bottom: 20px; /* Espacio debajo del título */
+/* Estilos para la imagen del logo */
+.logolong {
+    position:relative;
+    margin:0;
+    bottom:280px;
+    left: 30%;
+    width:13%;
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* Estilo de los campos de entrada */
 .mailpw {
     width: 100%; /* Ancho completo del contenedor */
-    padding: 10px; /* Espacio interior dentro del campo */
+    padding: 15px; /* Espacio interior dentro del campo */
     font-size: 16px; /* Tamaño de fuente del texto */
     border: 1px solid #ddd; /* Borde gris claro alrededor del campo */
     border-radius: 4px; /* Bordes redondeados del campo */
-    margin-bottom: 10px; /* Espacio debajo de cada campo */
+    margin-bottom: 18px; /* Espacio debajo de cada campo */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
 
 /* Estilo del botón de enviar */
 .InicioSesion {
-    background-color: #1877f2; /* Color de fondo azul para el botón */
+    background-color: rgb(8,102,255); /* Color de fondo azul para el botón */
     color: #ffffff; /* Color del texto del botón (blanco) */
     border: none; /* Sin borde alrededor del botón */
-    padding: 10px; /* Espacio interior dentro del botón */
-    font-size: 16px; /* Tamaño de fuente del texto del botón */
+    padding: 10px;
+    margin-top:1px; /* Espacio interior dentro del botón */
+    font-size: 22px; /* Tamaño de fuente del texto del botón */
     border-radius: 4px; /* Bordes redondeados del botón */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     width: 100%; /* Ancho completo del contenedor */
+    display: block;
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
 
 /* Estilo del botón al pasar el ratón sobre él */
@@ -58,10 +69,11 @@ h1 {
 /* Estilo del enlace "Olvidaste tu contraseña?" */
 .olvidaste {
     display: block; /* Muestra el enlace como un bloque para que ocupe toda la línea */
-    margin-top: 10px; /* Espacio arriba del enlace */
+    margin-top: 25px; /* Espacio arriba del enlace */
     color: #1877f2; /* Color del enlace (azul similar al de Facebook) */
     text-decoration: none; /* Sin subrayado en el enlace */
     font-size: 14px; /* Tamaño de fuente del enlace */
+
 }
 
 /* Estilo del enlace al pasar el ratón sobre la seccion de Olvidaste tu contrasenia */
@@ -69,17 +81,73 @@ h1 {
     text-decoration: underline; /* Subrayado al pasar el ratón para indicar clic */
 }
 
-
-h1{
+h1 {
     font-size: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: -30px;
     margin-right: -120px;
 }
-.textoAyuda{
+
+.textoAyuda {
+    position:relative; /*Para poder mover a gusto el box*/
+    width:30%;
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: -30px;
-    margin-right: -120px;
-        
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    left:17%;
+    top:-10%;
+    text-align: left; /* Centra el texto */
+}
+
+/* Estilo del botón "Crear cuenta nueva" */
+.NuevaCuenta {
+    background: rgb(21, 179, 21);
+    letter-spacing: 0px;
+    border: none;
+    text-decoration: solid;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 6px 8px 6px;
+    margin-top: 15px;
+    width: 100%; /* Ancho completo del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+.NuevaCuenta:hover {
+    cursor: pointer;
+}
+
+/* Línea de separación */
+.underline {
+    margin-top: 20px;
+    height: 1px;
+    background-color: rgb(222, 226, 229);
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* El contenedor ocupa el 90% del ancho de la pantalla */
+        padding: 20px; /* Reduce el padding para pantallas más pequeñas */
+    }
+
+    .logolong {
+        width: 40%; /* Reduce el tamaño del logo en pantallas pequeñas */
+    }
+
+    .textoAyuda {
+        font-size: 18px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logolong {
+        width: 60%; /* Ajusta el tamaño del logo en pantallas muy pequeñas */
+    }
+
+    .textoAyuda {
+        font-size: 16px; /* Reduce más el tamaño de la fuente en pantallas pequeñas */
+    }
 }

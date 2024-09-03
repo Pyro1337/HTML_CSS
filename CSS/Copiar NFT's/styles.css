@@ -6,7 +6,7 @@ body {
 }
 h2:hover{
     color:red;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .box {
@@ -69,8 +69,8 @@ h2:hover{
     font-family: 'Times New Roman', Times, serif;
 }
 .creator:hover{
-    color:rgb(107, 233, 23);
-    text-shadow: 2px 2px 5px rgba(0,0,0,0,5);
+    color:rgb(40, 246, 187);
+    text-shadow: 50px 20px 15px rgba(1,0,0,3,5);
     cursor:pointer;
 }
 
