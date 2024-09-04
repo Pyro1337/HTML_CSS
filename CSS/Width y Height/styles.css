@@ -16,23 +16,24 @@ body {
     background: #ffffff; /* Fondo blanco para el formulario */
     border-radius: 15px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor del contenedor */
-    padding: 20px; /* Espacio interno alrededor del contenido */
-    width: 396px; /* Ancho completo para adaptarse al tamaño de pantalla */
-    height: 314px;
+    padding: 20px;/* Espacio interno alrededor del contenido */
+    width: 550px; /* Ancho completo para adaptarse al tamaño de pantalla */
+    height: 360px;
     position: relative;
-    max-width: 360px; /* Ancho máximo del formulario */
     text-align: center; /* Centra el texto dentro del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin: 40px 0 0;
+    right: 210px;
+    bottom:60px;
 }
 
 /* Estilos para la imagen del logo */
 .logolong {
     position:relative;
-    margin:0;
-    bottom:280px;
-    left: 30%;
-    width:13%;
-    height: auto; /* Mantiene la proporción de la imagen */
+    margin:-28px;
+    bottom:120px;
+    left: 12rem;
+    width:355px;
+    height:120px;
 }
 
 /* Estilo de los campos de entrada */
@@ -52,13 +53,12 @@ body {
     color: #ffffff; /* Color del texto del botón (blanco) */
     border: none; /* Sin borde alrededor del botón */
     padding: 10px;
-    margin-top:1px; /* Espacio interior dentro del botón */
+    font-weight:bold;
     font-size: 22px; /* Tamaño de fuente del texto del botón */
     border-radius: 4px; /* Bordes redondeados del botón */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    width: 100%; /* Ancho completo del contenedor */
-    display: block;
-    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    width:360px; /* Ancho completo del contenedor */
+    height: 50px;
 }
 
 /* Estilo del botón al pasar el ratón sobre él */
@@ -89,28 +89,26 @@ h1 {
 }
 
 .textoAyuda {
-    position:relative; /*Para poder mover a gusto el box*/
-    width:30%;
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    left:17%;
-    top:-10%;
-    text-align: left; /* Centra el texto */
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top:-50px;
+    left: -100px;
 }
 
 /* Estilo del botón "Crear cuenta nueva" */
 .NuevaCuenta {
-    background: rgb(21, 179, 21);
-    letter-spacing: 0px;
-    border: none;
-    text-decoration: solid;
+    background: rgb(66,183,42);
+    border:none;
     border-radius: 4px;
     color: white;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: bold;
-    padding: 8px 6px 8px 6px;
     margin-top: 15px;
-    width: 100%; /* Ancho completo del contenedor */
+    width: 200px; /* Ancho completo del contenedor */
+    height: 50px;
+    padding:3px 10px 3px 10px;
     box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
 
