@@ -1,0 +1,66 @@
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+    background-color: brown;
+    margin: 0;
+    display: flex;             /* Activa flexbox en el body */
+    flex-direction: column;     /* Coloca los elementos en columna */
+    justify-content: center;    /* Centra verticalmente */
+    align-items: center;        /* Centra horizontalmente */
+    min-height: 100vh;          /* Asegura que el body tenga al menos el tamaño de la pantalla */
+    box-sizing: border-box;
+}
+
+.box1{
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+    box-sizing: border-box;
+}
+.formulario {
+    border: 5px solid blue;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos al centro horizontalmente */
+    justify-content: center;
+    width: 250px;
+    padding: 0;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+.formulario input, .formulario button {
+    background-color: blanchedalmond;
+    border: 5px solid blueviolet;
+    margin: 10px; /* Espaciado general */
+    padding: 10px;
+    width: 200px; /* Ajusta el ancho de los inputs y botón */
+}
+.formulario:hover{
+    border-color: aquamarine;
+}
+.formulario input:hover{
+    border-color:brown;
+}
+.formulario button:hover{
+    border-color:brown;
+    cursor:pointer;
+}
+
+.imagen{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    margin:20px;
+    background-image: url(youtube.png);
+    background-size: 50% 50%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
