@@ -23,33 +23,56 @@ body {
     box-sizing: border-box;
 }
 .formulario {
-    border: 5px solid blue;
-    background-color: black;
+    border: 5px solid #ededed;
+    background-color: rgba(188, 10, 10, 0);
     display: flex;
     flex-direction: column;
     align-items: center; /* Alinea los elementos al centro horizontalmente */
     justify-content: center;
     width: 250px;
     padding: 0;
-    height: 250px;
+    height: 350px;
     box-sizing: border-box;
 }
+.formulario h2{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 15PX;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.formulario h2:hover{
+    box-shadow: 0 0 80px #000;
+    cursor: crosshair;
+}
 
-.formulario input, .formulario button {
+.formulario input, .formulario button, .formulario textarea {
     background-color: blanchedalmond;
-    border: 5px solid blueviolet;
+    border: 5px solid rgb(9, 0, 17);
     margin: 10px; /* Espaciado general */
     padding: 10px;
     width: 200px; /* Ajusta el ancho de los inputs y botón */
 }
-.formulario:hover{
-    border-color: aquamarine;
+textarea{
+    max-width: 200px;
+    max-height: 150px;
+    resize : none;
+    /*field-sizing: content;
+    Propiedad aun no disponible que a la par que vas escribiendo se adapta automaticamente.*/
 }
-.formulario input:hover{
-    border-color:brown;
+.formulario:hover{
+    border-color: #ededed;
+}
+.formulario input:hover, .formulario textarea:hover{
+    border-color: #ededed;
+    box-shadow: 0 0 80px #000;
 }
 .formulario button:hover{
-    border-color:brown;
+    border-color: #ededed;
     cursor:pointer;
 }
 .imagen{
@@ -79,6 +102,9 @@ body {
     margin: 0 20px; /* Añade un margen entre los boxes */
     padding: 10px;
 }
+.boxi:hover , .boxi2:hover, .boxi3:hover{
+    box-shadow: 0 0 66px #000;
+}
 
 .boxi h2, .boxi2 h2, .boxi3 h2, .boxi p, .boxi2 p, .boxi3 p {
     color: white;
@@ -90,5 +116,15 @@ body {
     font-size: 2rem; /* Ajusta el tamaño de la fuente de los números */
     margin-bottom: 10px;
 }
+label {
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: left; /* O bien usa justify-content: flex-start si mantienes display: flex */
+    width: 90%; /* Asegura que el label ocupe todo el ancho disponible */
+}
+
 
 
