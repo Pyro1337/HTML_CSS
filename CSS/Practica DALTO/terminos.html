@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones - Ventas de Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        label {
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--En esta seccion colocamos los indices de las condiciones-->
+        <div>
+            <ol>
+                <li>
+                    <a href="#licencias">Licencias de Uso</a>
+                </li>
+                <li>
+                    <a href="#restricciones">Restricciones de Uso</a>
+                </li>
+                <li>
+                    <a href="#limitacion">Limitación de Responsabilidad</a>
+                </li>
+                <li>
+                    <a href="#propiedad">Propiedad Intelectual</a>
+                </li>
+                <li>
+                    <a href="#reembolsos">Reembolsos</a>
+                </li>
+            </ol>
+        </div>
+        <h1>Términos y Condiciones</h1>
+        <p>Estos Términos y Condiciones rigen el uso de nuestro software y los servicios relacionados. Al utilizar nuestro sitio web y nuestros productos, aceptas los siguientes términos:</p>
+        
+        <h2 id="licencias">1. Licencia de Uso</h2>
+        <p>El software proporcionado está licenciado, no vendido. El usuario adquiere una licencia limitada, no exclusiva y no transferible para utilizar el software de acuerdo con estos términos.</p>
+        
+        <h2 id="restricciones">2. Restricciones de Uso</h2>
+        <p>No puedes descompilar, hacer ingeniería inversa, desensamblar o intentar derivar el código fuente del software, ni modificarlo o crear obras derivadas.</p>
+        
+        <h2 id="limitacion">3. Limitación de Responsabilidad</h2>
+        <p>El software se proporciona "tal cual" sin garantía de ningún tipo. En ningún caso seremos responsables por daños directos, indirectos, incidentales o consecuentes que resulten del uso o la incapacidad de uso del software.</p>
+        
+        <h2 id="propiedad">4. Propiedad Intelectual</h2>
+        <p>Todos los derechos de propiedad intelectual relacionados con el software, incluyendo derechos de autor, son propiedad exclusiva de nuestra empresa o de nuestros licenciantes.</p>
+        
+        <h2 id="reembolsos">5. Política de Reembolsos</h2>
+        <p>Ofrecemos una política de reembolsos dentro de los 14 días posteriores a la compra, siempre que no se haya activado la licencia del software. Una vez activada, no se realizará ningún reembolso.</p>
+        
+        <h2>Confirmación</h2>
+        <label>
+            <input type="checkbox" id="acceptTerms">
+            Acepto los <a href="#">Términos y Condiciones</a>
+        </label>
+
+        <a href="#" class="button" onclick="submitForm()">Enviar Datos</a>
+    </div>
+
+    <script>
+        function submitForm() {
+            var checkbox = document.getElementById('acceptTerms');
+            if (checkbox.checked) {
+                alert('Gracias por aceptar los términos y condiciones.');
+            } else {
+                alert('Debes aceptar los términos y condiciones para continuar.');
+            }
+        }
+    </script>
+</body>
+</html>

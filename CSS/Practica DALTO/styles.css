@@ -205,4 +205,35 @@ li{
     font-family: sans-serif;
     font-size: 15px;
 }
+.condiciones{
+    font-size: 18px;
+    width: auto;
+    margin-right: 3px;
+    white-space: nowrap;
+    display: inline-block;
+}
+.condiciones .checkbox{
+    width: auto;
+    margin-left: 10px;
 
+}
+table, table td, table tr{
+    border: 3px solid #dedede;
+    font-size: 30px;
+    color: #fefefe;
+    font-family: sans-serif;
+}
+.tabletitle{
+    font-size: 40px;
+    color: #fefefe;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table td{
+    text-align: center;
+    padding: 10px;
+}
+table tr .first-columnTable :hover{
+    cursor: pointer;
+    box-shadow: #023305 0 0 10px;
+
+}
