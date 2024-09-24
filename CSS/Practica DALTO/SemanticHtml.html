@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Semántica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            margin: 20px;
+        }
+        article {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal del sitio -->
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <p>Bienvenido a mi sitio web semántico</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Artículo principal -->
+        <article>
+            <h2>Artículo Principal</h2>
+            <section>
+                <h3>Introducción</h3>
+                <p>Este es un artículo de ejemplo que demuestra el uso de HTML semántico. Las etiquetas semánticas ayudan a definir la estructura y el significado del contenido.</p>
+            </section>
+            <section>
+                <h3>Detalles del Artículo</h3>
+                <p>HTML semántico es importante porque mejora la accesibilidad, SEO y la claridad del código. Facilita a los motores de búsqueda y a los lectores de pantalla interpretar correctamente el contenido.</p>
+            </section>
+        </article>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h2>Enlaces Útiles</h2>
+            <ul>
+                <li><a href="#">Guía de HTML Semántico</a></li>
+                <li><a href="#">Documentación de MDN</a></li>
+                <li><a href="#">Tutorial de Accesibilidad</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -232,8 +232,11 @@ table td{
     text-align: center;
     padding: 10px;
 }
-table tr .first-columnTable :hover{
+.first-columnTable:hover{
     cursor: pointer;
-    box-shadow: #023305 0 0 10px;
-
+}
+.obTitle{
+    font-size: 40px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
 }
