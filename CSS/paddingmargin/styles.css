@@ -27,13 +27,25 @@ body {
     box-sizing: border-box;
 }
 .formulario {
-    border: 5px solid #ededed;
+    margin-top: 60px;
     background-color: rgba(188, 10, 10, 0);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 50%;
     box-sizing: border-box;
+}
+fieldset{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+legend{
+    color:white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #form{
     color: white;
@@ -46,16 +58,39 @@ body {
     align-items: center;
 }
 
-.formulario input,.formulario textarea {
-    background-color: rgb(10, 8, 4);
-    margin: 10px; /* Espaciado general */
-    padding: 10px;
-    width: 90%; /* Ajusta el ancho de los input */
+/*FileUpload con boton customizado*/
+.custom-file-upload {
+    position: relative;
     display: flex;
-    color:#ededed;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    margin: 10px;
+}   
+
+input[type="file"] {
+    display: none; /* Oculta el botón original */
 }
+
+.custom-file-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #023305;
+    color: white;
+    cursor: pointer;
+    width :30%;
+    font-size: 19px;
+    border-radius: 5px;
+}
+
+.custom-file-label i {
+    margin-right: 10px;
+}
+
+.custom-file-label:hover {
+    background-color: #b7c9b8;
+}
+
+/*TextArea*/
 textarea{
     display: flex;
     flex-direction: column;
@@ -71,24 +106,17 @@ textarea{
     border-color: #ededed;
     box-shadow: 0 0 80px #000;
 }
-.formulario button{
-    border-radius: 30px;
+button {
+    margin: 10px auto; /* Esto centra el botón horizontalmente */
     background-color: #fff0;
     border: 3px solid black;
+    border-radius: 30px;
     color: #ededed;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-family: monospace;
-    font-size: 20px;
-    width: 150px;
-    position: relative;
-    left: 20vh;
-    margin-bottom: 20px;
-    height: 60px;
-
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    width: 35%;
+    height: 65px;
 }
 .formulario button:hover{
     cursor:pointer;
@@ -134,16 +162,47 @@ textarea{
     font-size: 2rem; /* Ajusta el tamaño de la fuente de los números */
     margin-bottom: 10px;
 }
+
+/* Ajustamos los labels */
 label {
     font-size: 16px;
     font-family: sans-serif;
-    padding: 0;
-    margin: 0;
-    margin-left: 15px;
     color: white;
-    text-align: left; /* O bien usa justify-content: flex-start si mantienes display: flex */
-    width: 100%; /* Asegura que el label ocupe todo el ancho disponible */
+    display: block; /* Asegura que el label esté en una línea separada */
+    margin-bottom: 5px; /* Espacio entre el label y el input */
 }
 
+/* Ajustamos los inputs, select y textarea */
+input, select, textarea {
+    background-color: rgb(10, 8, 4);
+    color: #ededed;
+    padding: 10px;
+    width: 90%; /* Ajusta el ancho de los campos */
+    margin-bottom: 10px; /* Espacio entre los inputs */
+    box-sizing: border-box;
+}
 
+/* Agrupamos cada par de label e input */
+.form-group {
+    margin-bottom: 15px; /* Espacio entre los grupos de campos */
+    width: 100%;
+
+}
+details{
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    color:red;
+}
+details:hover{
+    cursor:pointer;
+}
+summary{
+    font-family: sans-serif;
+}
+li{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
 
