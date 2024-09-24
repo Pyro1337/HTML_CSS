@@ -126,7 +126,7 @@ button {
     height: 350px;
     box-sizing: border-box;
     margin: 20px;
-    background-image: url(menreunion.jpg);
+    background-image: url(Multimedia/menreunion.jpg);
     background-size: cover; /* Ajusta la imagen de fondo para que cubra todo el contenedor */
     background-position: center;
     background-attachment: fixed;
