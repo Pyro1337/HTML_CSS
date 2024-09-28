@@ -1,0 +1,84 @@
+/*Para los que terminan en PNG se coloca
+el selector img[src$="png"]*/
+img[src$="png"]{
+    width: 800px;
+    height: 600px;
+    border: 5px solid red;
+}
+/*Para los que empiezan con el link de imagenes que tienen la palabra POOH por ejemplo el selector img[src^="Images"]*/
+img[src^="Images/pooh"]{
+    width: 640px;
+    height: 640px;
+    border: 5px solid brown;
+}
+/*Para darle estilo por ejemplo a los Li que esten si o si dentro de un ORDERED LIST  y no en un UL hago lo siguiente*/
+ol li{
+    font-size: 20px;
+    color: brown;
+    font-style: italic;
+    font-weight: bold;
+}
+/*Para darle estilos a un hijo de un elemento se hace lo siguiente elemento > elementoHijo*/
+li > strong{
+    color: pink;
+}
+
+/*Para darle estilos mediante selectores adyacentes, es como dar estilo a elementos que esten inmediatamente despues de otro elemento en especifico
+se usa elemento-antecesor + elemento inmediato-hijo*/
+/*Para este caso aprovecho que tengo un p despues de un h1*/
+h1 + p{
+    color: green;
+}
+/*Ahora para especificamente darle estilo a todos los p que sigan de un h2 o h1 se hace lo siguiente*/
+h2 ~ p{
+    color: blue;
+}
+/*Pseudo-clases [Seleccion mediante un estado especifico.]*/
+/*Para darle estilo a un elemento cuando se le pasa el mouse encima*/
+h1:hover{
+    color:red;
+    background-color: #ccc;
+    cursor:pointer;
+}
+/*Para darle estilo a un elemento cuando se le da click*/
+h1:active{
+    color:rgb(255, 0, 170);
+}
+/*Para darle estilo a un elemento cuando es el primer hijo del elemento y el 4to por ejemplo*/
+ul li:first-child{
+    color:purple;
+}
+ul li:last-child{
+    color:purple;
+}
+/*el nth-child(4) especifica la posicion*/
+ul li:nth-child(2){
+    color:green;
+}
+/*La pseudoclase link y visited se utilizan para darle estilo a un elemento cuando se le da click*/
+a:link{
+    color:blue;
+}
+a:visited{
+    color:red;
+}
+/*PSEUDO-ELEMENTOS*/
+/*Darle estilo a la primera letra por ejemplo para hacerlo capital*/
+h1::first-letter{
+    font-size: 90px;
+    color:blue;
+}
+/*Ahora por ejemplo queremos modificar la primera linea de un parrafo*/
+p::first-line{
+    color:purple;
+}
+/*Cuando seleccionamos con el mouse podemos modificar el color*/
+p::selection{
+    color:green;
+    background-color: #ccc;
+}
+/*Cuando queremos afectar a un placeholder de un input*/
+input::placeholder{
+    color:#fefefe;
+    background-color: #000;
+}

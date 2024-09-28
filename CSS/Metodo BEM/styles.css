@@ -1,0 +1,14 @@
+h1{
+    font-size: 90px;
+}
+.lista__item{
+    font-size: 30px;
+    color:red;
+    list-style: square inside;
+}
+.item--malo{
+    color:blue;
+}
+.item--bueno{
+    color:cyan;
+}
