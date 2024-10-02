@@ -3,12 +3,12 @@ h1{
 }
 .lista__item{
     font-size: 30px;
-    color:red;
+    color: black;
     list-style: square inside;
 }
 .item--malo{
-    color:blue;
+    color:red;
 }
 .item--bueno{
-    color:cyan;
+    color:blue;
 }
